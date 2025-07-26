@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calc">
+        <input id="display" readonly>
+        <div id="buttons">
+            <button onclick="append('+')" class="op">+</button>
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button onclick="append('-')" class="op">-</button>
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button onclick="append('*')" class="op">x</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('1')">1</button>
+            <button onclick="append('/')" class="op">/</button>
+            <button onclick="append('0')">0</button>
+            <button onclick="append('.')" >.</button>
+            <button onclick="calculate()" >=</button>
+            <button onclick="clearDisplay()" class="op">AC</button>
+            <button onclick="backspace()" class="op">C</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
